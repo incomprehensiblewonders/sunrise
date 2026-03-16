@@ -165,3 +165,182 @@ html,body{
    pointer-events:none;
    white-space:nowrap;
  }
+
+/* Video Background */
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Audio Background */
+#bgMusic {
+  display: none;
+}
+
+/* Back Button */
+.back-btn {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.13);
+  border: 1.5px solid #bbb;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 1.35rem;
+  color: #222;
+  text-decoration: none;
+  z-index: 100;
+  box-shadow: 0 2px 8px #0002;
+  transition: background 0.18s, border 0.18s;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: #bbb;
+}
+
+/* Avatar Image */
+.avatar-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(255, 255, 255, 0.13);
+  margin-bottom: 22px;
+}
+
+/* Typewriter Text */
+#melancholia-typewriter {
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #505050;
+  letter-spacing: 1.2px;
+  white-space: pre;
+  min-width: 1em;
+  text-align: center;
+}
+
+/* Username */
+.melancholia-username {
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 1.2px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* Symbol Divider */
+.symbol-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0;
+}
+
+.symbol-divider span {
+  font-size: 2.1rem;
+  color: #444;
+}
+
+/* Info Text */
+.info-text {
+  width: 100%;
+  text-align: center;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 1.05rem;
+  color: #444;
+  user-select: none;
+}
+
+/* Lyrics Text */
+.lyrics-text {
+  width: 100%;
+  text-align: center;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 1rem;
+  color: #222;
+  user-select: none;
+  white-space: pre-line;
+  margin-top: 18px;
+}
+
+/* Text Divider */
+.text-divider {
+  width: 100%;
+  text-align: center;
+  margin: 18px 0 8px 0;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 1.1rem;
+  color: #222;
+  user-select: none;
+}
+
+/* Footer Divider */
+.footer-divider {
+  width: 100%;
+  text-align: center;
+  margin-top: 38px;
+  margin-bottom: 8px;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 1.1rem;
+  color: #222;
+  user-select: none;
+}
+
+/* Footer Info */
+.footer-info {
+  width: 100%;
+  text-align: center;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 1.05rem;
+  color: #444;
+  user-select: none;
+}
+
+/* Box Styling - Clear override */
+.box-content {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Lyrics Randomized */
+#lyricsRandomized {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 32px;
+  margin: 0 auto;
+  width: 98vw;
+  max-width: 900px;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  font-size: 17px;
+  color: var(--lyrics-color, #fff);
+  letter-spacing: 1.2px;
+  text-align: center;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+  white-space: pre-line;
+  font-weight: 500;
+  text-shadow: 0 2px 12px #fff, 0 0 2px #ffffff33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
